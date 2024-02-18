@@ -1,0 +1,235 @@
+button {
+    background-color:rgb(66, 170, 127);
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(49, 126, 94);
+  }
+
+.container{
+  display:grid ;
+  height: 100vh;
+  grid-template-areas:
+  "header header header "
+  "main main main "
+  "footer footer footer ";
+  grid-template-rows: 300px 1fr 100px;
+  grid-template-columns: 2.6fr 4fr 3fr;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(30, 26, 34);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  grid-area: main;
+  background-color: rgb(35, 17, 48);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(30, 26, 34);
+  text-align: center;
+  color: white;
+}
+
+
+.f{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 576px){
+  .container{
+    grid-template-areas:
+    "header "
+    "main"
+    "footer";
+  }
+
+button{
+  font-size: 14px;
+}
+
+.anchura{
+  width: 300px;
+}
+
+.img{
+  width: 50px;
+}
+
+a{
+  width:50px;
+}
+
+
+}
+
+
+input{
+  width:1000px;
+
+}
+
+select{
+  width:100px;
+
+}
+
+.encabezado{
+  display: flex;
+  margin: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img{
+  width: 50px;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.central{
+  display: flex;
+  align-items: center;
+}
+
+.anchura{
+  height:30px;
+}
+
+.titulo{
+  height:20px;
+  font-size: 50px;
+  padding: 10px;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.titulo:hover{
+  color: brown;
+}
+
+.boton{
+  background-color:rgb(61, 123, 131);
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.boton:hover{
+  background-color: rgb(45, 89, 95);
+}
+
+.fo{
+  cursor: pointer;
+}
+
+.h2{
+  margin: 10px;
+  transition: color 0.3s ease-out;
+}
+
+.h2:hover{
+  color: brown;
+}
+
+
+.tarjetas{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  width: 600px;
+  height: 400px;
+  padding: 21px;
+  justify-content: space-evenly;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.abajo{
+  display: flex;
+  align-items: center;
+}
+
+.apartamiento{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} 
+
+body{
+  margin: 0px;
+}
+
+.cuadro {
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+.cuadro1 {
+  width: 25px;
+  border: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  color: white;
+}
+
+.lineal{
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.tarjetas1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  width: 600px;
+  height: 400px;
+  padding: 21px;
+  justify-content: space-evenly;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.oscuro{
+  transition: filter 0.3s ease-out;
+  filter: grayscale(100%);
+}
+
+.oscuro:hover{
+  filter: grayscale(0%);
+}
+
